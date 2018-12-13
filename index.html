@@ -212,7 +212,7 @@
                     var top_of_object = $(this).position().top
 
                     /* If the object is completely visible in the window, fade it it */
-                    if( bottom_of_window > top_of_object +150 ){
+                    if( bottom_of_window > top_of_object +250 ){
 
                         $(this).animate({'opacity':'1'},750);
 
@@ -363,7 +363,7 @@
         </span>
 
 
-        <div id="skills">
+        <div id="skills" class="hideme">
             <div id="skillmap">
                 <div class="skills-wrapper">
                     <div class="skills-sunburst"></div>
@@ -376,6 +376,8 @@
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="skillsdata.js"></script>
         <script type="text/javascript" src="skill.js"></script>
+
+
     </div>
 </div>
 
@@ -511,7 +513,6 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
 
             </ol>
             <div class="carousel-inner slide carousel-fade">
