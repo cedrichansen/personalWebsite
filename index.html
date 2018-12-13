@@ -20,6 +20,7 @@
         html * {
             font-family: 'Karla', sans-serif;
         }
+
         .navbar {
             background-color: transparent;
 
@@ -63,7 +64,6 @@
             background-color: #555;
         }
 
-
         .Home {
             background-image: url("imagesAndContent/homeBackground.png");
             background-repeat: no-repeat;
@@ -74,8 +74,8 @@
         }
 
         #homeText {
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
             color: white;
             font-weight: bold;
             border: 3px solid grey;
@@ -84,7 +84,18 @@
 
         }
 
-        
+        .Courses {
+            /*todo*/
+        }
+
+        .row {
+            display: flex;
+        }
+        .column {
+            flex: 50%;
+            padding: 10px;
+             
+        }
 
     </style>
 
@@ -139,7 +150,9 @@
                 'slow');
         }
 
-        window.onscroll = function() {scrollFunction()};
+        window.onscroll = function () {
+            scrollFunction()
+        };
 
         function scrollFunction() {
             if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
@@ -152,7 +165,7 @@
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
 
-            $('html,body').animate({ scrollTop:0}, 'slow');
+            $('html,body').animate({scrollTop: 0}, 'slow');
 
             //document.body.scrollTop = 0;
             //document.documentElement.scrollTop = 0;
@@ -204,10 +217,10 @@
 
     <div class="container text-center" id="homeText">
 
-            <h1>Welcome to my Personal Webpage</h1>
-            <h5>My name is Cedric Hansen, and I'm a junior software engineering student at SUNY Oswego</h5>
+        <h1>Welcome to my Personal Webpage</h1>
+        <h5>My name is Cedric Hansen, and I'm a junior software engineering student at SUNY Oswego</h5>
 
-            <img height="30%" width="30%" src="imagesAndContent/HeadShot.jpg">
+        <img height="30%" width="30%" src="imagesAndContent/HeadShot.jpg">
 
 
     </div>
@@ -222,54 +235,52 @@
         </span>
 
         <h5>Below is a listing of my relevant courses</h5>
-        <h4>CS Courses</h4>
-        <ul style="list-style: none;">
-            <li>CSC445 Computer Networks</li>
-            <li>CSC436 Requirements Engineering</li>
-            <li>CSC482 Software Deployment</li>
-            <li>CSC375 Parallel Computing</li>
-            <li>CSC385 Software Quality</li>
-            <li>CSC480 Software Design</li>
-            <li>CSC445 Computer Networks</li>
-            <li>CSC380 Software Engineering</li>
-            <li>CSC344 Programming languages</li>
-            <li>CSC322 Systems Programming</li>
-            <li>CSC221 Foundation of Computer Scienc</li>
 
-            <br>
+        <div class="row">
+            <div class="column">
+                <h4>CS Courses</h4>
+                <ul style="list-style: none;" class="Courses">
+                    <li>CSC445 Computer Networks</li>
+                    <li>CSC436 Requirements Engineering</li>
+                    <li>CSC482 Software Deployment</li>
+                    <li>CSC375 Parallel Computing</li>
+                    <li>CSC385 Software Quality</li>
+                    <li>CSC480 Software Design</li>
+                    <li>CSC445 Computer Networks</li>
+                    <li>CSC380 Software Engineering</li>
+                    <li>CSC344 Programming languages</li>
+                    <li>CSC322 Systems Programming</li>
+                    <li>CSC221 Foundation of Computer Scienc</li>
+                    <br>
+                    <li>ISC410 Data Analytics</li>
+                    <li>ISC370 Human Computer Interaction</li>
+                    <li>ISC484 Software Entrepreneurship</li>
+                </ul>
+            </div>
 
-            <li>ISC410 Data Analytics</li>
-            <li>ISC370 Human Computer Interaction</li>
-            <li>ISC484 Software Entrepreneurship</li>
-        </ul>
+            <div class="column">
+                <h4>Science & Math Courses</h4>
+                <ul style="list-style: none;" class="Courses">
+                    <li>MAT320 Numerical Analysis</li>
+                    <li>MAT318 Stats for Science</li>
+                    <li>MAT215 Discrete Mathematics</li>
+                    <li>MAT240 Multivariable Calculus</li>
+                    <li>MAT220 Calc 2</li>
+                    <li>MAT210 Calc 1</li>
+                    <br>
+                    <li>PHY204 Physics of sound and music</li>
+                    <li>PHY213 Physics 2</li>
+                    <li>PHY112 Physics 1</li>
+                    <br>
+                    <li>PHL111 Logic 1</li>
+                </ul>
 
-
-        <h4>Science & Math Courses</h4>
-
-
-        <ul style="list-style: none;">
-            <li>MAT320 Numerical Analysis</li>
-            <li>MAT318 Stats for Science</li>
-            <li>MAT215 Discrete Mathematics</li>
-            <li>MAT240 Multivariable Calculus</li>
-            <li>MAT220 Calc 2</li>
-            <li>MAT210 Calc 1</li>
-            <br>
-            <li>PHY204 Physics of sound and music</li>
-            <li>PHY213 Physics 2</li>
-            <li>PHY112 Physics 1</li>
-            <br>
-            <li>PHL111 Logic 1 </li>
-
-
-        </ul>
-
-
-        <br>
-
-
+            </div>
+        </div>
     </div>
+
 </div>
+
 <div class="jumbotron jumbotron-fluid Experience">
     <div class="container text-center">
         <h1>Experience</h1>
@@ -357,7 +368,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Questionaires</h5>
                     <p class="card-text">This group project was the main outcome of my cscs380 course. This game is a
-                        desktop version of, cards against humanity mixed with Quiplash, with a twist. Includes a built in chat application</p>
+                        desktop version of, cards against humanity mixed with Quiplash, with a twist. Includes a built
+                        in chat application</p>
                     <a href="https://github.com/dmyrdek/csc380project" target="_blank" class="btn btn-primary"><img
                             height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
@@ -388,7 +400,8 @@
         </span>
 
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="imagesAndContent/CedricHansen_Resume.pdf" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="imagesAndContent/CedricHansen_Resume.pdf"
+                    allowfullscreen></iframe>
         </div>
         <a href="imagesAndContent/CedricHansen_Resume.pdf" download> <br>Download Resume</a>
     </div>
@@ -409,12 +422,12 @@
         <h1>Contact</h1>
 
         <div class="Contact">
-            <a href="https://www.linkedin.com/in/cedric-hansen-990060139/" target="_blank" >
+            <a href="https://www.linkedin.com/in/cedric-hansen-990060139/" target="_blank">
                 <span style="font-size: 50px; color: #0077B5;">
                     <i class="fab fa-linkedin"></i>
                 </span>
             </a>
-            <a href="https://github.com/cedrichansen" target="_blank" >
+            <a href="https://github.com/cedrichansen" target="_blank">
                 <span style="font-size: 50px; color:black">
                     <i class="fab fa-github"></i>
                 </span>
@@ -428,10 +441,6 @@
         </div>
     </div>
 </div>
-
-
-
-
 
 
 </body>
