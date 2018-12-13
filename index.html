@@ -58,9 +58,32 @@
             background-color: #555;
         }
 
+
+        .Home {
+            background-image: url("imagesAndContent/homeBackground.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+
+        }
+
+        #homeText {
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid grey;
+            width: 80%;
+            padding: 20px;
+
+        }
+
+
     </style>
 
     <script>
+
         function scrollToCourses() {
             $('html,body').animate({
                     scrollTop: $(".Courses").offset().top
@@ -113,7 +136,7 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
                 document.getElementById("myBtn").style.display = "block";
             } else {
                 document.getElementById("myBtn").style.display = "none";
@@ -172,11 +195,15 @@
 </nav>
 
 <div class="jumbotron jumbotron-fluid Home">
-    <div class="container text-center">
-        <h1>Welcome to my Personal Webpage</h1>
-        <h5>My name is Cedric Hansen, and I'm a junior software engineering student at SUNY Oswego</h5>
 
-        <img height="30%" width="30%" src="imagesAndContent/HeadShot.jpg">
+    <div class="container text-center" id="homeText">
+
+            <h1>Welcome to my Personal Webpage</h1>
+            <h5>My name is Cedric Hansen, and I'm a junior software engineering student at SUNY Oswego</h5>
+
+            <img height="30%" width="30%" src="imagesAndContent/HeadShot.jpg">
+
+
     </div>
 </div>
 
@@ -363,12 +390,12 @@
         <h1>Contact</h1>
 
         <div class="Contact">
-            <a href="https://www.linkedin.com/in/cedric-hansen-990060139/">
+            <a href="https://www.linkedin.com/in/cedric-hansen-990060139/" target="_blank" >
                 <span style="font-size: 50px; color: #0077B5;">
                     <i class="fab fa-linkedin"></i>
                 </span>
             </a>
-            <a href="https://github.com/cedrichansen">
+            <a href="https://github.com/cedrichansen" target="_blank" >
                 <span style="font-size: 50px; color:black">
                     <i class="fab fa-github"></i>
                 </span>
