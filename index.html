@@ -4,7 +4,11 @@
     <title>Cedric Hansen</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -69,12 +73,14 @@
                 },
                 'slow');
         }
+
         function scrollToProjects() {
             $('html,body').animate({
                     scrollTop: $(".Projects").offset().top
                 },
                 'slow');
         }
+
         function scrollToPhotos() {
             $('html,body').animate({
                     scrollTop: $(".Photos").offset().top
@@ -96,28 +102,28 @@
 
     <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar">
         <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#" onclick="scrollToCourses()">Courses</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" onclick="scrollToExperience()">Experience</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" onclick="scrollToSkills()">Skills</a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToCourses()">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToExperience()">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToSkills()">Skills</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" onclick="scrollToProjects()">Projects</a>
             </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="#" onclick="scrollToResume()">Resume</a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToResume()">Resume</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" onclick="scrollToPhotos()">Photos</a>
             </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" onclick="scrollToContact()">Contact</a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToContact()">Contact</a>
+            </li>
         </ul>
     </div>
 
@@ -135,6 +141,11 @@
 <div class="jumbotron jumbotron-fluid Courses">
     <div class="container text-center">
         <h1>Courses</h1>
+
+        <span style="font-size: 20px; color: black;">
+            <i class="fab fa-leanpub"></i>
+        </span>
+
         <h5>Below is a listing of my relevant courses</h5>
         <h4>CS Courses</h4>
         CSC445 Computer Networks<br>
@@ -170,18 +181,33 @@
 <div class="jumbotron jumbotron-fluid Experience">
     <div class="container text-center">
         <h1>Experience</h1>
+
+        <span style="font-size: 20px; color: black;">
+            <i class="fas fa-briefcase"></i>
+        </span>
+
         <h5>put experience here...</h5>
     </div>
 </div>
 <div class="jumbotron jumbotron-fluid Skills">
     <div class="container text-center">
         <h1>Skills</h1>
+
+        <span style="font-size: 20px; color: black;">
+            <i class="fas fa-th"></i>
+        </span>
+
         <h5>list skills here</h5>
     </div>
 </div>
 <div class="jumbotron jumbotron-fluid Projects ">
     <div class="container text-center">
         <h1>Projects</h1>
+
+        <span style="font-size: 20px; color: black;">
+            <i class="fas fa-desktop"></i>
+        </span>
+
         <h5>Here are a few of the interesting projects I have completed</h5> <br>
 
         <div class="card-deck">
@@ -191,8 +217,10 @@
                 <img class="card-img-top" src="imagesAndContent/FlootItSolver.png" alt="FlootItSolver">
                 <div class="card-body">
                     <h5 class="card-title">Flood-it Solver</h5>
-                    <p class="card-text">This project is a parallel move evaluator, which essentially finds a winning list of moves to beat the game "Flood-it"</p>
-                    <a href="https://github.com/cedrichansen/csc375hw03" target="_blank"class="btn btn-primary"><img height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
+                    <p class="card-text">This project is a parallel move evaluator, which essentially finds a winning
+                        list of moves to beat the game "Flood-it"</p>
+                    <a href="https://github.com/cedrichansen/csc375hw03" target="_blank" class="btn btn-primary"><img
+                            height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
             </div>
 
@@ -200,8 +228,11 @@
                 <img class="card-img-top" src="imagesAndContent/JDKvsCustomHT.png" alt="JDKvsCustomHt">
                 <div class="card-body">
                     <h5 class="card-title">Custom Hashtable</h5>
-                    <p class="card-text">This project is my custom implementation of a concurrent hashtable, and using JMH benchmark framework, was compared against the jdk concurrentHashmap (which happened to have been created by my professor, Doug Lea)</p>
-                    <a href="https://github.com/cedrichansen/csc375hw02" target="_blank" class="btn btn-primary"><img height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
+                    <p class="card-text">This project is my custom implementation of a concurrent hashtable, and using
+                        JMH benchmark framework, was compared against the jdk concurrentHashmap (which happened to have
+                        been created by my professor, Doug Lea)</p>
+                    <a href="https://github.com/cedrichansen/csc375hw02" target="_blank" class="btn btn-primary"><img
+                            height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
             </div>
 
@@ -209,8 +240,10 @@
                 <img class="card-img-top" src="imagesAndContent/ParallelGeneticAlgorithm.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Parallel Genetic Algorithm</h5>
-                    <p class="card-text">This project is an implementation of a parallel genetic algorithm which finds the most effective layout of squares in the grid</p>
-                    <a href="https://github.com/cedrichansen/csc375hw01" target="_blank"     class="btn btn-primary"><img height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
+                    <p class="card-text">This project is an implementation of a parallel genetic algorithm which finds
+                        the most effective layout of squares in the grid</p>
+                    <a href="https://github.com/cedrichansen/csc375hw01" target="_blank" class="btn btn-primary"><img
+                            height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
             </div>
 
@@ -221,24 +254,31 @@
                 <img class="card-img-top" src="imagesAndContent/DataMea-example.gif" alt="DataMea">
                 <div class="card-body">
                     <h5 class="card-title">DataMea</h5>
-                    <p class="card-text">This group project was the main outcome of my cscs480 course. It is an email analysis desktop app, which pulls interesting statstics from your Gmail account</p>
-                    <a href="https://github.com/cedrichansen/csc375hw02" target="_blank" class="btn btn-primary"><img height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
+                    <p class="card-text">This group project was the main outcome of my cscs480 course. It is an email
+                        analysis desktop app, which pulls interesting statstics from your Gmail account</p>
+                    <a href="https://github.com/cedrichansen/csc375hw02" target="_blank" class="btn btn-primary"><img
+                            height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="imagesAndContent/questioneers.jpg" alt="Questionaires">
                 <div class="card-body">
                     <h5 class="card-title">Questionaires</h5>
-                    <p class="card-text">This group project was the main outcome of my cscs380 course. This game is a desktop version of, cards against humanity mixed with Quiplash, with a twist</p>
-                    <a href="https://github.com/dmyrdek/csc380project" target="_blank" class="btn btn-primary"><img height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
+                    <p class="card-text">This group project was the main outcome of my cscs380 course. This game is a
+                        desktop version of, cards against humanity mixed with Quiplash, with a twist</p>
+                    <a href="https://github.com/dmyrdek/csc380project" target="_blank" class="btn btn-primary"><img
+                            height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="imagesAndContent/pathFinding.png" alt="Path finding Algorithm">
                 <div class="card-body">
                     <h5 class="card-title">Dijkstra Pathfinding</h5>
-                    <p class="card-text">This is one of my projects from my csc365 course. This is a persistent, weighted graph algorithm, which shortest path finding capabilities, between business listed by yelp</p>
-                    <a href="https://github.com/cedrichansen/csc365hw03" target="_blank" class="btn btn-primary"><img height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
+                    <p class="card-text">This is one of my projects from my csc365 course. This is a persistent,
+                        weighted graph algorithm, which shortest path finding capabilities, between business listed by
+                        yelp</p>
+                    <a href="https://github.com/cedrichansen/csc365hw03" target="_blank" class="btn btn-primary"><img
+                            height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
             </div>
         </div>
@@ -250,18 +290,33 @@
 <div class="jumbotron jumbotron-fluid Resume ">
     <div class="container text-center">
         <h1>Resume</h1>
+
+        <span style="font-size: 20px; color: black;">
+            <i class="fas fa-file-alt"></i>
+        </span>
+
         <h5>put resume here</h5>
     </div>
 </div>
 <div class="jumbotron jumbotron-fluid Photos">
     <div class="container text-center">
         <h1>Photos</h1>
+
+        <span style="font-size: 20px; color: black;">
+            <i class="fas fa-file-alt"></i>
+        </span>
+
         <h5>Hockey photos go here</h5>
     </div>
 </div>
 <div class="jumbotron jumbotron-fluid Contact ">
     <div class="container text-center">
         <h1>Contact</h1>
+
+        <span style="font-size: 20px; color: black;">
+            <i class="fas fa-user-circle"></i>
+        </span>
+
         <h5>contact stuff here</h5>
     </div>
 </div>
