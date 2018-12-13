@@ -113,6 +113,10 @@
             max-height: 700px;
         }
 
+        .hideme {
+            opacity:0;
+        }
+
 
 
     </style>
@@ -184,10 +188,35 @@
         function topFunction() {
 
             $('html,body').animate({scrollTop: 0}, 'slow');
-
-            //document.body.scrollTop = 0;
-            //document.documentElement.scrollTop = 0;
         }
+
+        $(function(){  // $(document).ready shorthand
+            $('.monster').fadeIn('slow');
+        });
+
+        $(document).ready(function() {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll( function(){
+
+                /* Check the location of each desired element */
+                $('.hideme').each( function(i){
+
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    var top_of_object = $(this).position().top
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if( bottom_of_window > top_of_object +150 ){
+
+                        $(this).animate({'opacity':'1'},1500);
+
+                    }
+
+                });
+
+            });
+
+        });
 
 
     </script>
@@ -248,7 +277,7 @@
 </div>
 
 <div class="jumbotron jumbotron-fluid Courses">
-    <div class="container text-center">
+    <div class="container text-center hideme">
         <h1>Courses</h1>
 
         <span style="font-size: 20px; color: black;">
@@ -302,7 +331,7 @@
 
 </div>
 
-<div class="jumbotron jumbotron-fluid Experience">
+<div class="jumbotron jumbotron-fluid Experience hideme">
     <div class="container text-center">
         <h1>Experience</h1>
 
@@ -316,7 +345,7 @@
         </button>
     </div>
 </div>
-<div class="jumbotron jumbotron-fluid Skills">
+<div class="jumbotron jumbotron-fluid Skills hideme">
     <div class="container text-center">
         <h1>Skills</h1>
 
@@ -327,7 +356,7 @@
         <h5>list skills here</h5>
     </div>
 </div>
-<div class="jumbotron jumbotron-fluid Projects ">
+<div class="jumbotron jumbotron-fluid Projects hideme ">
     <div class="container text-center">
         <h1>Projects</h1>
 
@@ -415,7 +444,7 @@
 </div>
 
 
-<div class="jumbotron jumbotron-fluid Resume ">
+<div class="jumbotron jumbotron-fluid Resume hideme">
     <div class="container text-center">
         <h1>Resume</h1>
 
@@ -430,7 +459,7 @@
         <a href="imagesAndContent/CedricHansen_Resume.pdf" download> <br>Download Resume</a>
     </div>
 </div>
-<div class="jumbotron jumbotron-fluid Photos">
+<div class="jumbotron jumbotron-fluid Photos hideme">
     <div class="container text-center">
         <h1>Photos</h1>
 
@@ -511,7 +540,7 @@
 
     </div>
 </div>
-<div class="jumbotron jumbotron-fluid Contact ">
+<div class="jumbotron jumbotron-fluid Contact hideme">
     <div class="container text-center">
         <h1>Contact</h1>
 
