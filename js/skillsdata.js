@@ -5,11 +5,11 @@ skillsdata = {
 
         "Language": {
             "OOP": {
-                "C#": [0,0,0,20,20],
+                "C#": [0,0,0,20,40],
                 "Java": {
                     "jfx": [0,0,30,40,40],
                     "Concurrency": [0,0,0,40,60],
-                    "Networking": [0,0,10,20,30],
+                    "Networking": [0,0,10,20,50],
                     "Algorithms": [0,0,20, 60, 80]
                 },
                 "Scala": [0,0,30,30,30]
