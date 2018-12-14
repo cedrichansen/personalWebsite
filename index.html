@@ -18,213 +18,12 @@
 
     <!--stuff for skill tree-->
     <script src="http://d3js.org/d3.v3.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="skill.css"/>
+    <link rel="stylesheet" type="text/css" href="css/skill.css"/>
 
-    <style>
+    <!--custom stuff-->
+    <script src="js/mainScript.js"></script>
+    <link rel="stylesheet" href="css/mainStyle.css">
 
-
-        html * {
-            font-family: 'Karla', sans-serif;
-        }
-
-        .navbar {
-            background-color: transparent;
-
-        }
-
-        .navbar-nav {
-            border: 1px solid #ccc;
-            border-width: 1px 0;
-            list-style: none;
-            margin: 20px;
-            padding: 0;
-            text-align: center;
-            background-color: transparent;
-
-        }
-
-        .nav-item a {
-            display: inline-block;
-            padding: 15px;
-
-        }
-
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 18px;
-            border: medium;
-            outline: medium;
-            background-color: black;
-            color: white;
-            cursor: pointer;
-            padding: 15px;
-            border-radius: 10px;
-            border-color: red;
-        }
-
-        #myBtn:hover {
-            background-color: #555;
-        }
-
-        .Home {
-            background-image: url("imagesAndContent/homeBackground.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-        }
-
-        #homeText {
-            background-color: rgb(0, 0, 0); /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-            color: white;
-            font-weight: bold;
-            border: 3px solid grey;
-            width: 80%;
-            padding: 20px;
-
-        }
-
-
-
-        .Courses {
-            /*todo*/
-        }
-
-        .row {
-            display: flex;
-        }
-        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-            }
-        }
-
-        .column {
-            flex: 50%;
-            padding: 10px;
-
-        }
-
-
-        .carousel-item img {
-
-            height: auto;
-            max-height: 700px;
-        }
-
-        .hideme {
-            opacity:0;
-        }
-
-
-
-    </style>
-
-    <script>
-
-        function scrollToCourses() {
-            $('html,body').animate({
-                    scrollTop: $(".Courses").offset().top
-                },
-                'slow');
-        }
-
-        function scrollToExperience() {
-            $('html,body').animate({
-                    scrollTop: $(".Experience").offset().top
-                },
-                'slow');
-        }
-
-        function scrollToSkills() {
-            $('html,body').animate({
-                    scrollTop: $(".Skills").offset().top
-                },
-                'slow');
-        }
-
-        function scrollToContact() {
-            $('html,body').animate({
-                    scrollTop: $(".Contact").offset().top
-                },
-                'slow');
-        }
-
-        function scrollToResume() {
-            $('html,body').animate({
-                    scrollTop: $(".Resume").offset().top
-                },
-                'slow');
-        }
-
-        function scrollToProjects() {
-            $('html,body').animate({
-                    scrollTop: $(".Projects").offset().top
-                },
-                'slow');
-        }
-
-        function scrollToPhotos() {
-            $('html,body').animate({
-                    scrollTop: $(".Photos").offset().top
-                },
-                'slow');
-        }
-
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-
-            $('html,body').animate({scrollTop: 0}, 'slow');
-        }
-
-        $(function(){  // $(document).ready shorthand
-            $('.monster').fadeIn('slow');
-        });
-
-        $(document).ready(function() {
-
-            /* Every time the window is scrolled ... */
-            $(window).scroll( function(){
-
-                /* Check the location of each desired element */
-                $('.hideme').each( function(i){
-
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-                    var top_of_object = $(this).position().top
-
-                    /* If the object is completely visible in the window, fade it it */
-                    if( bottom_of_window > top_of_object + 300 ){
-
-                        $(this).animate({'opacity':'1'},750);
-
-                    }
-
-                });
-
-            });
-
-        });
-
-
-    </script>
 </head>
 
 
@@ -373,8 +172,8 @@
             </div>
         </div>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="skillsdata.js"></script>
-        <script type="text/javascript" src="skill.js"></script>
+        <script type="text/javascript" src="js/skillsdata.js"></script>
+        <script type="text/javascript" src="js/skill.js"></script>
 
 
     </div>
@@ -395,6 +194,16 @@
 
         <div class="card-deck">
 
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="imagesAndContent/projectImages/DataMea-example.gif" alt="DataMea">
+                <div class="card-body">
+                    <h5 class="card-title">DataMea</h5>
+                    <p class="card-text">This group project was the main outcome of my cscs480 course. It is an email
+                        analysis desktop app, which pulls interesting statstics from your Gmail account</p>
+                    <a href="https://github.com/cedrichansen/csc375hw02" target="_blank" class="btn btn-primary"><img
+                            height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
+                </div>
+            </div>
 
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="imagesAndContent/projectImages/FlootItSolver.png" alt="FlootItSolver">
@@ -410,7 +219,7 @@
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="imagesAndContent/projectImages/JDKvsCustomHT.png" alt="JDKvsCustomHt">
                 <div class="card-body">
-                    <h5 class="card-title">Custom Hashtable</h5>
+                    <h5 class="card-title">Custom Concurrent Hashtable</h5>
                     <p class="card-text">This project is my custom implementation of a concurrent hashtable, and using
                         JMH benchmark framework, was compared against the jdk concurrentHashmap (which happened to have
                         been created by my professor, Doug Lea)</p>
@@ -419,6 +228,11 @@
                 </div>
             </div>
 
+
+
+        </div>
+        <br>
+        <div class="card-deck">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="imagesAndContent/projectImages/ParallelGeneticAlgorithm.png" alt="Card image cap">
                 <div class="card-body">
@@ -426,20 +240,6 @@
                     <p class="card-text">This project is an implementation of a parallel genetic algorithm which finds
                         the most effective layout of squares in the grid</p>
                     <a href="https://github.com/cedrichansen/csc375hw01" target="_blank" class="btn btn-primary"><img
-                            height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
-                </div>
-            </div>
-
-        </div>
-        <br>
-        <div class="card-deck">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="imagesAndContent/projectImages/DataMea-example.gif" alt="DataMea">
-                <div class="card-body">
-                    <h5 class="card-title">DataMea</h5>
-                    <p class="card-text">This group project was the main outcome of my cscs480 course. It is an email
-                        analysis desktop app, which pulls interesting statstics from your Gmail account</p>
-                    <a href="https://github.com/cedrichansen/csc375hw02" target="_blank" class="btn btn-primary"><img
                             height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
             </div>
