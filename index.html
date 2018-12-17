@@ -41,26 +41,26 @@
     <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="scrollToCourses()">Courses</a>
+                <a class="nav-link" onclick="scrollToCourses()">Courses</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="scrollToExperience()">Experience</a>
+                <a class="nav-link" onclick="scrollToExperience()">Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="scrollToSkills()">Skills</a>
+                <a class="nav-link" onclick="scrollToSkills()">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="scrollToProjects()">Projects</a>
+                <a class="nav-link" onclick="scrollToProjects()">Projects</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="scrollToResume()">Resume</a>
+                <a class="nav-link" onclick="scrollToResume()">Resume</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="scrollToPhotos()">Photos</a>
+                <a class="nav-link" onclick="scrollToPhotos()">Photos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="scrollToContact()">Contact</a>
+                <a class="nav-link" onclick="scrollToContact()">Contact</a>
             </li>
         </ul>
     </div>
@@ -93,7 +93,7 @@
 
         <h5>Below is a listing of my relevant courses</h5>
 
-        <div class="row">
+        <div class="row hideme">
             <div class="column">
                 <ul style="list-style: none;" class="Courses">
                     <h4>CS Courses</h4>
@@ -139,14 +139,34 @@
 </div>
 
 <div class="jumbotron jumbotron-fluid Experience hideme">
-    <div class="container text-center">
+    <div class="container text-center" >
         <h1>Work Experience</h1>
 
         <span style="font-size: 20px; color: black;">
             <i class="fas fa-briefcase"></i>
         </span>
 
-        <h5>Coming soon</h5>
+        <br>
+        <br>
+
+        <div class="flip-card hideme" style="margin: 0 auto">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://pbs.twimg.com/profile_images/1017463670102745088/CB6Fdz8l_400x400.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Automation Engineering Intern</h3>
+                    <p>May 2018 - Dec 2018</p>
+                    <p>Developed forms for plant wide equipment/utilities inspections,
+                        along with the reporting system associated with the forms. Created a C# app to generate QR codes, which,
+                    when scanned, brought up the appropriate form
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </div>
 </div>
@@ -193,9 +213,9 @@
 
         <h5>Here are a few of the interesting projects I have completed</h5> <br>
 
-        <div class="card-deck">
+        <div class="card-deck hideme">
 
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto" >
                 <img class="card-img-top" src="imagesAndContent/projectImages/DataMea-example.gif" alt="DataMea">
                 <div class="card-body">
                     <h5 class="card-title">DataMea</h5>
@@ -206,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;margin-left: auto; margin-right: auto">
                 <img class="card-img-top" src="imagesAndContent/projectImages/flood-it-Solver.gif" alt="FlootItSolver">
                 <div class="card-body">
                     <h5 class="card-title">Flood-it Solver</h5>
@@ -217,7 +237,7 @@
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;margin-left: auto; margin-right: auto">
                 <img class="card-img-top" src="imagesAndContent/projectImages/JDKvsCustomHT.png" alt="JDKvsCustomHt">
                 <div class="card-body">
                     <h5 class="card-title">Custom Concurrent Hashtable</h5>
@@ -233,8 +253,8 @@
 
         </div>
         <br>
-        <div class="card-deck">
-            <div class="card" style="width: 18rem;">
+        <div class="card-deck hideme">
+            <div class="card" style="width: 18rem;margin-left: auto; margin-right: auto">
                 <img class="card-img-top" src="imagesAndContent/projectImages/ParallelGeneticAlgorithm.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Parallel Genetic Algorithm</h5>
@@ -244,7 +264,7 @@
                             height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;margin-left: auto; margin-right: auto">
                 <img class="card-img-top" src="imagesAndContent/projectImages/questioneers.jpg" alt="Questionaires">
                 <div class="card-body">
                     <h5 class="card-title">Questionaires</h5>
@@ -255,7 +275,7 @@
                             height="20%" width="20%" src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;margin-left: auto; margin-right: auto">
                 <img class="card-img-top" src="imagesAndContent/projectImages/pathfinding.gif" alt="Path finding Algorithm">
                 <div class="card-body">
                     <h5 class="card-title">Dijkstra Pathfinding</h5>
@@ -299,7 +319,7 @@
 
 
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide hideme" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -387,6 +407,7 @@
                     <i class="fas fa-envelope"></i>
                 </span>
             </a>
+
 
         </div>
     </div>

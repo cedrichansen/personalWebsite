@@ -81,7 +81,7 @@ $(document).ready(function() {
             var top_of_object = $(this).position().top
 
             /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > top_of_object + 300 ){
+            if( bottom_of_window > top_of_object + 250 ){
 
                 $(this).animate({'opacity':'1'},750);
 
