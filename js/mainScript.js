@@ -92,3 +92,9 @@ $(document).ready(function() {
     });
 
 });
+
+
+
+$( '.menu-btn' ).click(function(){
+    $('.collapsibleNavbar').slideToggle('slow');
+});
