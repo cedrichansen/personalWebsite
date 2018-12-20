@@ -3,7 +3,7 @@ var skillsdata;
 skillsdata = {
     "Skills": {
 
-        "Language": {
+        "Languages": {
             "OOP": {
                 "C#": [0,0,0,20,40],
                 "Java": {
@@ -15,12 +15,12 @@ skillsdata = {
                 "Scala": [0,0,30,30,30]
             },
             "Script": {
-                "Javascript": [0,0,10,30,30],
-                "Python": [0,0,30,40],
+                "Javascript": [0,0,10,30,50],
+                "Python": [0,0,30,50, 60]
             },
             "Other": {
                 "Clojure": [0,0,35,35,35],
-                "SQL": [0,0,0,40,40],
+                "SQL": [0,0,0,40,45],
                 "C": [0,0,35,35,35]
             }
         },
@@ -30,9 +30,9 @@ skillsdata = {
 
         "Web Dev": {
             "Front End": {
-                "CSS": [0,0,0,10,50],
-                "JS": [0,0,10,30,30],
-                "HTML": [10,20, 40, 50,50]
+                "CSS": [0,0,10,10,50],
+                "JS": [0,0,10,30,50],
+                "HTML": [10,20, 40, 60,65]
             }
         },
 
