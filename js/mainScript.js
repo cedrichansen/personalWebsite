@@ -1,3 +1,4 @@
+
 function scrollToCourses() {
     $('html,body').animate({
             scrollTop: $(".Courses").offset().top
