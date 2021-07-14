@@ -42,25 +42,31 @@
 
         <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" onclick="scrollToCourses()">Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="scrollToExperience()">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="scrollToSkills()">Skills</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" onclick="scrollToProjects()">Projects</a>
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToSkills()">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToCourses()">Courses</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToExperience()">Experience</a>
+                </li> -->
+                
+
+                <li class="nav-item">
                     <a class="nav-link" onclick="scrollToResume()">Resume</a>
                 </li>
-                <li class="nav-item">
+
+                <!-- <li class="nav-item">
                     <a class="nav-link" onclick="scrollToPhotos()">Photos</a>
-                </li>
+                </li> -->
+
                 <li class="nav-item">
                     <a class="nav-link" onclick="scrollToContact()">Contact</a>
                 </li>
@@ -75,8 +81,9 @@
 
             <h1>Welcome to my Personal Webpage</h1>
             <h5>
-                My name is Cedric Hansen, and I'm a senior software engineering student and varsity ice hockey player at
-                SUNY Oswego
+                My name is Cedric Hansen, and I'm software developer.
+                This page contains everything you need to know about me as a developer, including past projects, skills,
+                and more!
             </h5>
 
 
@@ -85,203 +92,6 @@
 
         </div>
     </div>
-
-    <div class="jumbotron jumbotron-fluid Courses ">
-        <div class="container text-center hideme">
-            <h1>Courses</h1>
-
-            <span style="font-size: 20px; color: black;">
-                <i class="fab fa-leanpub"></i>
-            </span>
-
-            <h5>Below is a listing of my relevant courses</h5>
-
-            <div class="row hideme">
-                <div class="column">
-                    <ul style="list-style: none;" class="Courses">
-                        <h4>CS Courses</h4>
-                        <li>CSC454 System Simulation</li>
-                        <li>CSC470 Computer Graphics</li>
-                        <li>CSC495 Software Engineering Capstone</li>
-                        <li>CSC445 Computer Networks</li>
-                        <li>CSC436 Requirements Engineering</li>
-                        <li>CSC482 Software Deployment</li>
-                        <li>CSC375 Parallel Computing</li>
-                        <li>CSC385 Software Quality</li>
-                        <li>CSC480 Software Design</li>
-                        <li>CSC365 Data Structures and Algorithms</li>
-                        <li>CSC380 Software Engineering</li>
-                        <li>CSC344 Programming languages</li>
-                        <li>CSC322 Systems Programming</li>
-                        <li>CSC221 Foundation of Computer Science</li>
-                        <br>
-                        <li>ISC370 Human Computer Interaction</li>
-                        <li>ISC484 Software Entrepreneurship</li>
-                    </ul>
-                </div>
-
-                <div class="column">
-                    <ul style="list-style: none;" class="Courses">
-                        <h4>Science & Math Courses</h4>
-                        <li>MAT353 Mathematical Modeling</li>
-                        <li>MAT318 Stats for Science</li>
-                        <li>MAT215 Discrete Mathematics</li>
-                        <li>MAT240 Multivariable Calculus</li>
-                        <li>MAT220 Calc 2</li>
-                        <li>MAT210 Calc 1</li>
-                        <br>
-                        <li>PHY204 Physics of sound and music</li>
-                        <li>PHY213 Physics 2</li>
-                        <li>PHY112 Physics 1</li>
-                        <br>
-                        <li>PHL111 Logic 1</li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="jumbotron jumbotron-fluid Experience hideme">
-        <div class="container text-center">
-            <h1>Work Experience</h1>
-
-            <span style="font-size: 20px; color: black;">
-                <i class="fas fa-briefcase"></i>
-            </span>
-
-            <br>
-            <br>
-
-            <div class="flip-card hideme" style="margin: 0 auto">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="https://pbs.twimg.com/profile_images/1017463670102745088/CB6Fdz8l_400x400.jpg"
-                            alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-
-                    <div class="flip-card-back">
-                        <h3>Automation Engineering Intern</h3>
-                        <p>May 2018 - Dec 2018</p>
-                        <p>Developed interactive, online forms for plant wide equipment/utilities inspections,
-                            along with a reporting system associated with the forms. Created a C# app to generate QR
-                            codes,
-                            which,
-                            when scanned, brought up the appropriate form
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <div class="flip-card hideme" style="margin: 0 auto">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/e564ad20a1c97381f236e5f38cc4dcdc"
-                            alt="IBM" style="width:300px;height:300px;">
-                    </div>
-
-                    <div class="flip-card-back">
-                        <h3>Backend software developer Intern</h3>
-                        <p>May 2019 - Aug 2019</p>
-                        <p>Working on GC components under the openJ9 team.
-                            Responsibilities include GC performance optimisations, modifying GC
-                            start time based off of several metrics/calculations, feature enhancements for
-                            a program to test GC/VM behaviour, and investigating customer related GC issues
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-
-    <div class="jumbotron jumbotron-fluid Skills hideme">
-        <div class="container">
-
-            <div class="skills">
-                <h1>Skill Set</h1>
-                <div title="test" class="bar expert" data-skill="Java">
-                    <div class="hoverText"> The majority of my programming experience comes from java. I have built
-                        things ranging from video streaming applications, to email analysis desktop apps. I have done
-                        lots of networking, parallel programming, and GUI programming in java. Knowledge of many
-                        framworks such as maven, Junit, and JFX </div>
-                </div>
-                <div class="bar basic" data-skill="C#">
-                    <div class="hoverText"> I programmed in C# while at Novelis. I developped a small application to
-                        access a database, and generate QR codes for vehicle inspection checks. I programmed a GUI with
-                        some parallel elements, along with sending emails, and accessing databases from C#</div>
-                </div>
-                <div class="bar intermediate" data-skill="Javascript">
-                    <div class="hoverText"> My javascript experience consists of basic web development (such as this
-                        page), creating <a target="_blank" href="http://cs.oswego.edu/~chansen/csc470/">WebGL
-                            projects</a> for a
-                        course, and some small browser based games</div>
-                </div>
-                <div class="bar basic" data-skill="Python">
-                    <div class="hoverText"> I have written several small scripts in python, most of which have been for
-                        my mathematical modeling class, or for my programming languages course</div>
-                </div>
-                <div class="bar basic" data-skill="SQL">
-                    <div class="hoverText"> I spent a good portion of my summer internship at Novelis working with an
-                        SQL database, so I learned how to make queries. I used these queries to make a reporting system
-                        for vehicle and facilities inspection reports at Novelis</div>
-                </div>
-                <div class="bar advanced" data-skill="C/C++">
-                    <div class="hoverText"> I learned C++ while interning at IBM in summer 2019, and then enhanced my
-                        skills while taking system simulation at SUNY Oswego. In this course, we learned to make a
-                        discrete event framework in Java/C++.</div>
-                </div>
-                <div class="bar advanced" data-skill="Golang">
-                    <div class="hoverText">My Go projects are almost exclusively servers (which I ended up running on
-                        AWS ec2 containers). I used Go in my software deployment classes where I learned to make API
-                        requests, and write to a database, and then another server which responded to HTTP requests (and
-                        fetched appropriate data from DB). I also used Go to make the server for "Cahoots" capstone
-                        project</div>
-                </div>
-                <div class="bar intermediate" data-skill="Flutter">
-                    <div class="hoverText">I used flutter extensively when developping my capstone project. I wrote a
-                        full scale application using flutter.</div>
-                </div>
-                <div class="bar advanced" data-skill="Dart">
-                    <div class="hoverText">I used dart extensively while creating my capstone project. The entire mobile
-                        app component was made using dart and flutter</div>
-                </div>
-                <div class="bar basic" data-skill="Shell Scripting">
-                    <div class="hoverText">Have written dozens of small scripts to automate commonly used tasks for
-                        builds, server updates, file system mounts, etc</div>
-                </div>
-                <div class="bar intermediate" data-skill="HTML">
-                    <div class="hoverText">The creating of this website, in addition to some other very small
-                        websites/charts.</div>
-                </div>
-                <div class="bar intermediate" data-skill="CSS">
-                    <div class="hoverText">
-                        More or less used alongside of all projects I've made using html.
-                    </div>
-                </div>
-
-                <div class="bar intermediate" data-skill="Quality assurance">
-                    <div class="hoverText">
-                        Took a course in quality assurance, where I learned tools such as equivalence classes, jUnit,
-                        and other commonly used QA techniques
-                    </div>
-                </div>
-
-                <div class="bar intermediate" data-skill="Requirements engineering">
-                    <div class="hoverText">
-                        Took a course in requirements engineering where we learned the process of creating requirements
-                        documents for safety critical systems
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
 
     <div class="jumbotron jumbotron-fluid Projects hideme ">
         <div class="container text-center">
@@ -296,7 +106,7 @@
             <div class="card-deck hideme">
 
                 <div class="card" style="width: 18rem; margin-left: auto; margin-right: auto">
-                    <img class="card-img-top" src="imagesAndContent/projectImages/DataMea-example.gif" alt="DataMea">
+                    <iframe class="card-img-top" height="250" src="https://www.youtube.com/embed/xSVeZ-2Vglw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="card-body">
                         <h5 class="card-title">DataMea</h5>
                         <p class="card-text">This group project was the main outcome of my cscs480 course. It is an
@@ -309,16 +119,19 @@
                 </div>
 
                 <div class="card" style="width: 18rem;margin-left: auto; margin-right: auto">
-                    <img class="card-img-top" src="imagesAndContent/projectImages/flood-it-Solver.gif"
-                        alt="FlootItSolver">
+                    <video class="card-img-top" height="250" controls>
+                        <source src="imagesAndContent/Routemate_demo.mov" type="video/mp4">
+                        Your browser does not support video
+                    </video>
                     <div class="card-body">
-                        <h5 class="card-title">Flood-it Solver</h5>
-                        <p class="card-text">This project is a parallel move evaluator, which essentially finds a
-                            winning
-                            list of moves to beat the game "Flood-it"</p>
-                        <a href="https://github.com/cedrichansen/csc375hw03" target="_blank"
+                        <h5 class="card-title">Routemate</h5>
+                        <p class="card-text">This application built in Flutter, allows landscaping, and other service companies, to optimize their daily operations.
+                            This application provides clarify into which properties have been visited, route optimization, forms, and a wealth of other features to help snow removal, lawn care, and other services.
+                            This first version of this project has been in use for 1 year, by 30+ daily users
+                        </p>
+                        <!-- <a href="https://github.com/cedrichansen/csc375hw03" target="_blank"
                             class="btn btn-primary"><img height="20%" width="20%"
-                                src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
+                                src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a> -->
                     </div>
                 </div>
 
@@ -329,7 +142,7 @@
                     </video>
                     <div class="card-body">
                         <h5 class="card-title">Cahoots</h5>
-                        <p class="card-text">Cahoots is a mobile application, aimed at helping gym-goers find gym
+                        <p class="card-text">Cahoots is a mobile application built in Flutter, aimed at helping gym-goers find gym
                             partners at their local gym.
                             This app was created using Flutter, as part of my software engineering capstone, with
                             Douglas Myrdek.
@@ -381,7 +194,8 @@
                             This project is a streaming service, which used AES encryption, and multicast sockets to
                             securely stream the hosts webcam view, to clients with the correct room password. Used the
                             <a href="http://webcam-capture.sarxos.pl/" target="_blank">webcam capture</a> API
-                            to connect to get images from our webcam. (reload page to replay gif</p>
+                            to connect to get images from our webcam. (reload page to replay gif
+                        </p>
                         <a href="https://github.com/cedrichansen/csc445hw03/tree/updatedGui" target="_blank"
                             class="btn btn-primary"><img height="20%" width="20%"
                                 src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
@@ -441,17 +255,14 @@
 
             <div class="card-deck hideme">
                 <div class="card" style="width: 18rem;margin-left: auto; margin-right: auto">
-                    <img class="card-img-top" src="imagesAndContent/projectImages/flappyBird.gif"
-                        alt="Flappy Bird Remake">
+                    <img class="card-img-top" src="imagesAndContent/projectImages/flood-it-Solver.gif"
+                        alt="FlootItSolver">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="FlappyBird/flappyBird.html" target="_blank">Flappy Bird
-                                Remake</a></h5>
-                        <p class="card-text">This is a remake of the popular mobile game, Flappy Bird. This is my first
-                            full
-                            javascript project, made using p5.js. I am looking to eventually add some sort of AI
-                            componant so that
-                            the circle can 'win' the game.</p>
-                        <a href="https://github.com/cedrichansen/flappyBird" target="_blank"
+                        <h5 class="card-title">Flood-it Solver</h5>
+                        <p class="card-text">This project is a parallel move evaluator, which essentially finds a
+                            winning
+                            list of moves to beat the game "Flood-it"</p>
+                        <a href="https://github.com/cedrichansen/csc375hw03" target="_blank"
                             class="btn btn-primary"><img height="20%" width="20%"
                                 src="imagesAndContent/GitHub-Logos/GitHub_Logo.png"></a>
                     </div>
@@ -489,6 +300,207 @@
     </div>
 
 
+    <div class="jumbotron jumbotron-fluid Skills hideme">
+        <div class="container">
+
+            <div class="skills">
+                <h1>Skill Set</h1>
+                <div class="bar expert" data-skill="Flutter">
+                    <div class="hoverText">I have used flutter extensively over the past 2 years. I have developed a handful of projects - it is arguably my favourite tool to create applications</div>
+                </div>
+                <div class="bar expert" data-skill="Dart">
+                    <div class="hoverText">Similar to my flutter experience, I absolutely love dart. I think the syntax is close enough to Java, while not being as verbose, and has some great utilities, which I really enjoy using for dev work</div>
+                </div>
+                <div title="test" class="bar expert" data-skill="Java">
+                    <div class="hoverText"> The majority of my programming experience comes from java. I have built
+                        things ranging from video streaming applications, to email analysis desktop apps. I have done
+                        lots of networking, parallel programming, and GUI programming in java. Knowledge of many
+                        framworks such as maven, Junit, and JFX </div>
+                </div>
+                <div class="bar advanced" data-skill="C/C++">
+                    <div class="hoverText"> Most of my development work at IBM is done in C++.
+                        Developing GC componants has exposed me to the absolute bare bones of C++, so I am familiar with all language features, but not with many third party libraries (ie, boost, etc)
+                        I learned C++ while interning at IBM in summer 2019, and then enhanced my
+                        skills while taking system simulation at SUNY Oswego. In this course, we learned to make a
+                        discrete event framework in Java/C++.</div>
+                </div>
+                <div class="bar basic" data-skill="C#">
+                    <div class="hoverText"> I programmed in C# while at Novelis. I developped a small application to
+                        access a database, and generate QR codes for vehicle inspection checks. I programmed a GUI with
+                        some parallel elements, along with sending emails, and accessing databases from C#</div>
+                </div>
+                <div class="bar advanced" data-skill="Javascript">
+                    <div class="hoverText"> My javascript experience consists of basic web development (such as this
+                        page), creating <a target="_blank" href="http://cs.oswego.edu/~chansen/csc470/">WebGL
+                            projects</a> for a
+                        course, and some small browser based games. Additionally, while working at IBM, I developed an application which connected to slack API's, and detected "offensive" emoji's, and alerted HR</div>
+                </div>
+                <div class="bar basic" data-skill="Python">
+                    <div class="hoverText"> I have written several small scripts in python, most of which have been for
+                        my mathematical modeling class, or for my programming languages course</div>
+                </div>
+                <div class="bar basic" data-skill="SQL">
+                    <div class="hoverText"> I spent a good portion of my summer internship at Novelis working with an
+                        SQL database, so I learned how to make queries. I used these queries to make a reporting system
+                        for vehicle and facilities inspection reports at Novelis</div>
+                </div>
+
+                <div class="bar advanced" data-skill="Golang">
+                    <div class="hoverText">My Go projects are almost exclusively servers (which I ended up running on
+                        AWS ec2 containers). I used Go in my software deployment classes where I learned to make API
+                        requests, and write to a database, and then another server which responded to HTTP requests (and
+                        fetched appropriate data from DB). I also used Go to make the server for "Cahoots" capstone
+                        project</div>
+                </div>
+                
+                <div class="bar intermediate" data-skill="Shell Scripting">
+                    <div class="hoverText">Have written dozens of small scripts to automate commonly used tasks for
+                        builds, server updates, file system mounts, running tests, etc</div>
+                </div>
+                <div class="bar intermediate" data-skill="HTML">
+                    <div class="hoverText">The creating of this website, in addition to some other very small
+                        websites/charts.</div>
+                </div>
+                <div class="bar intermediate" data-skill="CSS">
+                    <div class="hoverText">
+                        More or less used alongside of all projects I've made using html.
+                    </div>
+                </div>
+
+                <div class="bar intermediate" data-skill="Quality assurance">
+                    <div class="hoverText">
+                        Took a course in quality assurance, where I learned tools such as equivalence classes, jUnit,
+                        and other commonly used QA techniques
+                    </div>
+                </div>
+
+                <div class="bar intermediate" data-skill="Requirements engineering">
+                    <div class="hoverText">
+                        Took a course in requirements engineering where we learned the process of creating requirements
+                        documents for safety critical systems
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron jumbotron-fluid Courses ">
+        <div class="container text-center hideme">
+            <h1>Courses</h1>
+
+            <span style="font-size: 20px; color: black;">
+                <i class="fab fa-leanpub"></i>
+            </span>
+
+            <h5>Below is a listing of my relevant courses</h5>
+
+            <div class="row hideme">
+                <div class="column">
+                    <ul style="list-style: none;" class="Courses">
+                        <h4>CS Courses</h4>
+                        <li>CSC454 System Simulation</li>
+                        <li>CSC470 Computer Graphics</li>
+                        <li>CSC495 Software Engineering Capstone</li>
+                        <li>CSC445 Computer Networks</li>
+                        <li>CSC436 Requirements Engineering</li>
+                        <li>CSC482 Software Deployment</li>
+                        <li>CSC375 Parallel Computing</li>
+                        <li>CSC385 Software Quality</li>
+                        <li>CSC480 Software Design</li>
+                        <li>CSC365 Data Structures and Algorithms</li>
+                        <li>CSC380 Software Engineering</li>
+                        <li>CSC344 Programming languages</li>
+                        <li>CSC322 Systems Programming</li>
+                        <li>CSC221 Foundation of Computer Science</li>
+                        <br>
+                        <li>ISC370 Human Computer Interaction</li>
+                        <li>ISC484 Software Entrepreneurship</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul style="list-style: none;" class="Courses">
+                        <h4>Science & Math Courses</h4>
+                        <li>MAT353 Mathematical Modeling</li>
+                        <li>MAT318 Stats for Science</li>
+                        <li>MAT215 Discrete Mathematics</li>
+                        <li>MAT240 Multivariable Calculus</li>
+                        <li>MAT220 Calc 2</li>
+                        <li>MAT210 Calc 1</li>
+                        <br>
+                        <li>PHY204 Physics of sound and music</li>
+                        <li>PHY213 Physics 2</li>
+                        <li>PHY112 Physics 1</li>
+                        <br>
+                        <li>PHL111 Logic 1</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- 
+    <div class="jumbotron jumbotron-fluid Experience hideme">
+        <div class="container text-center">
+            <h1>Work Experience</h1>
+
+            <span style="font-size: 20px; color: black;">
+                <i class="fas fa-briefcase"></i>
+            </span>
+
+            <br>
+            <br>
+
+            <div class="flip-card hideme" style="margin: 0 auto">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://pbs.twimg.com/profile_images/1017463670102745088/CB6Fdz8l_400x400.jpg"
+                            alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+
+                    <div class="flip-card-back">
+                        <h3>Automation Engineering Intern</h3>
+                        <p>May 2018 - Dec 2018</p>
+                        <p>Developed interactive, online forms for plant wide equipment/utilities inspections,
+                            along with a reporting system associated with the forms. Created a C# app to generate QR
+                            codes,
+                            which,
+                            when scanned, brought up the appropriate form
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="flip-card hideme" style="margin: 0 auto">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/e564ad20a1c97381f236e5f38cc4dcdc"
+                            alt="IBM" style="width:300px;height:300px;">
+                    </div>
+
+                    <div class="flip-card-back">
+                        <h3>Backend software developer Intern</h3>
+                        <p>May 2019 - Aug 2019</p>
+                        <p>Working on GC components under the openJ9 team.
+                            Responsibilities include GC performance optimisations, modifying GC
+                            start time based off of several metrics/calculations, feature enhancements for
+                            a program to test GC/VM behaviour, and investigating customer related GC issues
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div> -->
+
+
+    
+
     <div class="jumbotron jumbotron-fluid Resume hideme">
         <div class="container text-center">
             <h1>Resume</h1>
@@ -504,7 +516,8 @@
             <a href="imagesAndContent/CedricHansen_Resume.pdf" download> <br>Download Resume</a>
         </div>
     </div>
-    <div class="jumbotron jumbotron-fluid Photos hideme">
+
+    <!-- <div class="jumbotron jumbotron-fluid Photos hideme">
         <div class="container text-center">
             <h1>Photos</h1>
 
@@ -589,7 +602,9 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
+
+
     <div class="jumbotron jumbotron-fluid Contact">
         <div class="container text-center">
             <h1>Contact</h1>
