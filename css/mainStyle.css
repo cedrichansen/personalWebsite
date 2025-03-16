@@ -212,3 +212,36 @@ html * {
     width: calc(100% - 10px);
 }
 
+.move-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffeb3b; /* Yellow background */
+    color: #000; /* Black text */
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    z-index: 9999; /* Ensure it stays on top */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add subtle shadow */
+}
+
+.move-banner a {
+    color: #2196F3; /* Blue link color */
+    text-decoration: underline;
+    margin-left: 8px;
+}
+
+.move-banner a:hover {
+    color: #1976D2; /* Darker blue on hover */
+}
+
+/* Optional close button */
+.close-btn {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
